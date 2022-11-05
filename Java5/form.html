@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pamje nga Galeria e Artit</title>
+</head>
+<body>
+<form method="get" action="">
+	<fieldset>
+		<legend>Advanced Art Work Search</legend>
+		<div id="search">
+			<input type="search" name="kerkimi" placeholder="Titulli per kerkim">
+			Subject:
+			<input type="radio" name="subject" value="1">History
+			<input type="radio" name="subject" value="2">Person
+			<input type="radio" name="subject" value="3">Landscape
+          <select name="filter">
+          	<option value="0">Zgjidhni stilin</option>
+          	<option value="1">Neo-clasicizem</option>
+          	<option value="2">Baroque</option>
+          	<option value="3">Rokoko</option>
+          	<option value="4">Romanticsm</option>
+          </select>
+          <input type="submit" name="filter">
+		</div>
+		<div id="piktura">
+			<select name="action">
+          	<option value="0">Zgjidhni stilin</option>
+          	<option value="0">Archive</option>
+          	<option value="0">Delete</option>
+          	<option value="0">Edit</option>
+			</select>
+			<input type="submit" name="Apply to all">
+		</div>
+		<div id="tabela">
+			<table>
+				<caption>Piktura</caption>
+				<thead>
+					<tr>
+						<th colspan="2"></th>
+						<th scope="col">Title</th>
+						<th scope="col">Artist</th>
+						<th scope="col">Year</th>
+						<th scope="col">Genre</th>
+						<th scope="col">Actions</th>
+					</tr>
+					<tbody>
+						<tr>
+							<th><input type="checkbox" name="index" value="10"></th>
+							<th><img src="../images3/125010.jpg" width="90" height="90"></th>
+							<td><em>Portrait of Alida Christina</em></td>
+							<td>Kusman,Jan</td>
+							<td>1883</td>
+							<td>Realism</td>
+							<td>
+								<button type="button"><img src="../images3/edit.png"></button>
+								<button type="button"><img src="../images3/archive.png"></button>
+								<button type="button"><img src="../images3/delete.png"></button>
+							</td>
+						</tr>
+						<tr>
+							<th><input type="checkbox" name="index" value="10"></th>
+							<th><img src="../images3/125020.jpg" width="90" height="90"></th>
+							<td><em>Portrait of Alida Christina</em></td>
+							<td>Kusman,Jan</td>
+							<td>1883</td>
+							<td>Realism</td>
+							<td>
+								<button type="button"><img src="../images3/edit.png"></button>
+								<button type="button"><img src="../images3/archive.png"></button>
+								<button type="button"><img src="../images3/delete.png"></button>
+							</td>
+						</tr>
+						<tr>
+							<th><input type="checkbox" name="index" value="10"></th>
+							<th><img src="../images3/127010.jpg" width="90" height="90"></th>
+							<td><em>Portrait of Alida Christina</em></td>
+							<td>Kusman,Jan</td>
+							<td>1883</td>
+							<td>Realism</td>
+							<td>
+								<button type="button"><img src="../images3/edit.png"></button>
+								<button type="button"><img src="../images3/archive.png"></button>
+								<button type="button"><img src="../images3/delete.png"></button>
+							</td>
+						</tr>
+						<tr>
+							<th><input type="checkbox" name="index" value="10"></th>
+							<th><img src="../images3/130020.jpg" width="90" height="90"></th>
+							<td><em>Portrait of Alida Christina</em></td>
+							<td>Kusman,Jan</td>
+							<td>1883</td>
+							<td>Realism</td>
+							<td>
+								<button type="button"><img src="../images3/edit.png"></button>
+								<button type="button"><img src="../images3/archive.png"></button>
+								<button type="button"><img src="../images3/delete.png"></button>
+							</td>
+						</tr>
+
+					</tbody>
+				</thead>
+			</table>
+		</div>
+	</fieldset>
+</form>
+</body>
+</html>
