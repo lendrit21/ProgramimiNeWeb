@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Photo Detalis</title>
+	<link rel="stylesheet" type="text/css" href="form2.css">
+</head>
+<body>
+  	 <form method="get" action="">
+	<fieldset>
+		<legend>Photo Detalis</legend>
+		<table>
+				<tr class="title">
+					<td colspan="4"><label for="titulli">Title <br><input type="text" name="title" id="titulli" placeholder="Give your photo a description" required></label>
+					</td>
+				</tr>
+				<tr class="description">
+					<td colspan="4"><label for="pershkrimi">Description<br><textarea name="description" id="pershkrimi" rows="5" cols="50" placeholder="Adding a rich description will help with search results" required></textarea></label></td>
+				</tr>
+				<tr class="continent">
+					<td colspan="1"><label for="kontinent">Continent<br><select name="continent" id="kontinent">
+						<option value="">Zgjidhni Kontinentin</option>
+						<option value="1">Evropa</option>
+						<option value="2">Azia</option>
+						<option value="3">Afrika</option>
+						<option value="4">Amerika Veriore</option>
+						<option value="5">Amerika Jugore</option>
+						<option value="6">Australia</option>
+						<option value="7">Antraktida</option>
+					</select></label></td>
+					<td colspan="3" class="radio">
+						Copyright?<br>
+						<label for="one"><input type="radio" name="reserved" id="one"value="0">All rights reserved</label><br>
+						<label for="two"><input type="radio" name="reserved" id="two"value="1">Creative Commons</label><br>
+					</td></tr>
+					<tr class="country">
+						<td>
+							<label for="country">Country<br><select name="country" id="country">
+						<option value="">Zgjidhni Shtetin</option>
+						<option value="1">Kosove</option>
+						<option value="2">Shqiperi</option>
+						<option value="3">Angli</option>
+						<option value="4">Zvicer</option>
+						<option value="5">Gjermani</option>
+						<option value="6">France</option>
+						<option value="7">Itali</option>
+							</select>
+						</label></td>
+                        <td rowspan="2" colspan="2" class="checkbox">
+                        	Creative Commons Type<br>
+                        	<label for="A"><input type="checkbox" name="type"id="A"  value="0">Attribution</label><br>
+                        	<label for="B"><input type="checkbox" name="type" id="B" value="0">Noncommercial</label><br>
+                        	<label for="C"><input type="checkbox" name="type" id="C" value="0">No Derivative Works</label><br>
+                        </td>
+					</tr>
+				      <tr class="city">
+					     <td><label for="qyteti">City<br><input list="city" id="qyteti">
+                         <datalist id="city">
+                      <option value="Prishtine"></option>
+                      <option value="Prizren"></option>
+                      <option value="Peje"></option>
+                      <option value="Malisheve"></option>
+                      <option value="Suhareke"></option>
+                      <option value="Gjakove"></option>
+                      <option value="Ferizaj"></option>
+                         </datalist></label></td>
+				      </tr>
+				      <tr class="accept">
+				      	<td colspan="4"><label for="accept">I accept the Software License <input type="checkbox" name="license"id="accept" value="1"></label></td>
+				      </tr>
+				     <tr class="number">
+				     	<td rowspan="2"><label for="number">Rate this photo <br><input type="number" name="number" id="number" min="0" max="10"></label>
+				     	<label for="color">Color collection <br><input type="color" name="color" id="color"></label></td>
+				     </tr>
+				    
+				     	<tr class="date">
+				     	<td rowspan="1">
+				     		<label for="date">Date taken <br><input type="date" name="date" id="date"></label><br>
+				     		<label for="time">Time taken <br><input type="time" name="time" id="time"></label>
+				     	</td></tr>
+				   
+				     	<tr class="button">
+				     		<td colspan="4"><input type="submit" name="submit" value="Submit">
+                            <input type="reset" name ="submit" value="Clear Form"></td>	
+                        </tr>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>
