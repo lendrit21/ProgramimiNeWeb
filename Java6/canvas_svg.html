@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+        Audio dhe video
+    </title>
+    <meta charset="windows-1252">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Fanimal%2Fhorse&psig=AOvVaw0fZc93qab-h1pHLdIskDgS&ust=1666352733564000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCLCOgOnd7voCFQAAAAAdAAAAABAD">
+    <link href="piktura.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="Canvasi im" width="300" height="100" style="border: 1px solid #000000"></canvas>
+        <script>
+            var c = document.getElementById("Canvasi im");
+            var ctx = c.getContext("2d");
+
+            ctx.fillStyle = "#FF0000"
+            ctx.fillRect(0, 0, 150, 75);
+
+            ctx.moveTo(155, 0);
+            ctx.lineTo(250, 75);
+            ctx.stroke();
+            ctx.font = "15px Arial";
+            ctx.fillText("Ushtrime ne PWWW", 10, 90);
+
+        </script>
+        <br><br />
+    <svg width="600" height="300">
+        <ellipse cx="230" cy="45" rx="210" ry="35" style="fill:red"/>
+        <polygon points="220, 40 300, 200 150, 250 125,230"
+                 style="fill:yellow; stroke:purple; storke-width:1"/>
+    </svg>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Butonat</title>
+</head>
+<body>
+<h1>Shembuj nga inputet e reja ne HTML</h1>
+<form>
+	<div class="color">
+		<p>Tipi i inputiit: color</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne ngjyra.</p>
+		<input type="color" name="ngjyra">
+	</div>
+	<div class="datetime-local">
+		<p>Tipi i inputiit: date-time local</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne daten dhe oren.</p>
+		<input type="datetime-local" name="datetime-local">
+	</div>
+	<div class="email">
+		<p>Tipi i inputiit: email</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne emailin.</p>
+		<input type="email" name="email" placeholder="shkruani emailin tuaj">
+	</div>
+	<div class="month">
+		<p>Tipi i inputiit: month</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne muajin.</p>
+		<input type="month" name="month">
+	</div>
+	<div class="number">
+		<p>Tipi i inputiit: number</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne vlera numerike.</p>
+		<p>Atributet qe perdoren nga kjo fushe jane: <br>
+		min - specifikon vleren minimale,<br>
+		max - specifikon vleren maksimale,<br>
+	   step - specifikon shkallen me te cilen rritet vlera,<br>
+	  value - vlera e nenkuptuar. 
+	</p>
+		<input type="number" name="numri" min="0" max="100" value="5" step="5" placeholder="number...">
+	</div>
+	<div class="range">
+		<p>Tipi i inputiit: range</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne vlera numerike.</p>
+		<p>Atributet qe perdoren nga kjo fushe jane: <br>
+		min - specifikon vleren minimale,<br>
+		max - specifikon vleren maksimale,<br>
+	   step - specifikon shkallen me te cilen rritet vlera,<br>
+	  value - vlera e nenkuptuar. 
+	</p>
+		<input type="range" name="range" min="0" max="100" value="50" step="10">
+	</div>
+	<div class="search">
+		<p>Tipi i inputiit: search</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne search-field.</p>
+		<input type="search" name="kerko" placeholder="search...">
+	</div>
+	<div class="time">
+		<p>Tipi i inputiit: time</p>
+		Time: <p>Ky tip i inputit perdoret per fushat qe permbajne kohen.</p>
+		<input type="time" name="koha">
+	</div>
+	<div class="URL">
+		<p>Tipi i inputiit: URL</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne url.</p>
+		URL: <input type="url" name="url" placeholder="shkruani nje url">
+	</div>
+	<div class="week">
+		<p>Tipi i inputiit: week</p>
+		<p>Ky tip i inputit perdoret per fushat qe permbajne javen.</p>
+		Java: <input type="week" name="java">
+	</div>
+</form>
+<h1>Shembuj me atributet "event" ne HTML5</h1>
+<form>
+	<div>
+	0<input type="range" name="range" min="0" max="100" value="50">100
+	+ <input type="number" name="number" min="0" max="999" value="40">=
+	</div>
+	<div>
+		Emri: <input type="text" name="emri">
+	    Mbuemri: <input type="text" name="mbiemri">
+		Emaili: <input type="email" name="emaili">
+       <input type="submit" name="submit" value="Dergo" onsubmit="myfunction1()">
+       <input type="submit" name="submit" value="Dergo si admin" onsubmit="myfunction2()">
+	</div>
+	<br><br>
+	<div>
+        Kodi postar i qytetit: <input type="number" name="number" min="0" max="999999">
+       <input type="submit" name="submit" value="Dergo" onsubmit="myfunction3()">
+	</div>
+	<script>
+	function myfunction1(){
+		alert("forma(login) eshte derguar si(Dergo)")
+	}
+	function myfunction2(){
+		alert("forma(login) eshte derguar si(Dergo si admin)")
+	}
+	function myfunction3(){
+		alert("kodi postar eshte derguar");
+	}
+	</script>
+</form>
+</body>
+</html>
